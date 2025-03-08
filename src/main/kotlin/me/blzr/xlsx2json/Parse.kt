@@ -2,23 +2,43 @@ package me.blzr.xlsx2json
 
 import com.fasterxml.jackson.core.JsonEncoding
 import com.fasterxml.jackson.core.JsonFactory
-import com.monitorjbl.xlsx.StreamingReader
+import com.github.pjfanning.xlsx.SharedStringsImplementationType
+import com.github.pjfanning.xlsx.StreamingReader
 import org.apache.poi.ss.usermodel.Cell
 import org.apache.poi.ss.usermodel.CellType.*
 import org.apache.poi.ss.usermodel.Workbook
-import java.io.InputStream
+import org.slf4j.LoggerFactory
+import java.io.File
 import java.io.OutputStream
 
 
 object Parser {
-    fun parse(inputStream: InputStream, outputStream: OutputStream) {
-        val workbook: Workbook = StreamingReader.builder()
-            .rowCacheSize(100) // number of rows to keep in memory (defaults to 10)
-            .bufferSize(4096) // buffer size to use when reading InputStream to file (defaults to 1024)
-            .open(inputStream) // InputStream or File for XLSX file (required)
+    private val log = LoggerFactory.getLogger("Parser")
+    fun parse(input: String, outputStream: OutputStream) {
+        log.info("Will read $input")
+        // See more info regarding configuration
+        // https://github.com/monitorjbl/excel-streaming-reader/issues/104
+        // graal 4094b 100 rows 4m 1s
+        // graal 1mb 1000 rows 4m 38s
 
+        // https://github.com/pjfanning/excel-streaming-reader?tab=readme-ov-file#reading-very-large-excel-files
+        // ZipInputStreamZipEntrySource.setThresholdBytesForTempFiles(16384); //16KB
+        // ZipPackage.setUseTempFilePackageParts(true);
+
+        val workbook: Workbook = StreamingReader.builder()
+            .setSharedStringsImplementationType(SharedStringsImplementationType.CUSTOM_MAP_BACKED)
+            .setFullFormatRichText(false)
+            .setReadStyles(false)
+            //.setAvoidTempFiles(false)
+            .setAvoidTempFiles(true)
+            .rowCacheSize(10) // number of rows to keep in memory (defaults to 10)
+            .bufferSize(1024) // buffer size to use when reading InputStream to file (defaults to 1024)
+            // Most of the time took sst loading
+            // .sstCacheSize(1024 * 1024 * 1024)
+            .open(File(input)) // InputStream or File for XLSX file (required)
+        log.info("Book is loaded")
         val sheet = workbook.getSheetAt(0)
-        System.err.println("Total ${sheet.lastRowNum} rows")
+        // System.out.println("Total ${sheet.lastRowNum} rows")
 
         val rowIterator = sheet.iterator()
 
@@ -32,7 +52,7 @@ object Parser {
             jsonGenerator.writeStartArray()
 
             for (row in rowIterator) {
-                if (row.rowNum % 1000 == 0) System.err.println("Parsed ${row.rowNum} rows")
+                if (row.rowNum % 10_000 == 0) log.info("Parsed ${row.rowNum} rows")
 
                 jsonGenerator.writeStartObject()
 

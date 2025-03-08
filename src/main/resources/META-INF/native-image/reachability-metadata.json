@@ -1,6 +1,156 @@
 {
   "reflection": [
     {
+      "type": "ch.qos.logback.classic.encoder.PatternLayoutEncoder",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.classic.joran.SerializedModelConfigurator",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.classic.pattern.DateConverter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.classic.pattern.LevelConverter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.classic.pattern.LineSeparatorConverter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.classic.pattern.LoggerConverter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.classic.pattern.MessageConverter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.classic.pattern.ThreadConverter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.classic.spi.LogbackServiceProvider"
+    },
+    {
+      "type": "ch.qos.logback.classic.util.DefaultJoranConfigurator",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.core.ConsoleAppender",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.core.OutputStreamAppender",
+      "methods": [
+        {
+          "name": "setEncoder",
+          "parameterTypes": [
+            "ch.qos.logback.core.encoder.Encoder"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.core.encoder.Encoder"
+    },
+    {
+      "type": "ch.qos.logback.core.encoder.LayoutWrappingEncoder",
+      "methods": [
+        {
+          "name": "setParent",
+          "parameterTypes": [
+            "ch.qos.logback.core.spi.ContextAware"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.core.pattern.PatternLayoutEncoderBase",
+      "methods": [
+        {
+          "name": "setPattern",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.core.spi.ContextAware"
+    },
+    {
+      "type": "com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
       "type": "com.sun.xml.internal.stream.XMLInputFactoryImpl",
       "methods": [
         {
@@ -10,7 +160,7 @@
       ]
     },
     {
-      "type": "org.apache.commons.compress.archivers.zip.AsiExtraField",
+      "type": "com.sun.xml.internal.stream.XMLOutputFactoryImpl",
       "methods": [
         {
           "name": "<init>",
@@ -19,7 +169,7 @@
       ]
     },
     {
-      "type": "org.apache.commons.compress.archivers.zip.JarMarker",
+      "type": "com.sun.xml.internal.stream.events.XMLEventFactoryImpl",
       "methods": [
         {
           "name": "<init>",
@@ -28,396 +178,92 @@
       ]
     },
     {
-      "type": "org.apache.commons.compress.archivers.zip.ResourceAlignmentExtraField",
+      "type": "java.io.FilePermission"
+    },
+    {
+      "type": "java.lang.RuntimePermission"
+    },
+    {
+      "type": "java.net.NetPermission"
+    },
+    {
+      "type": "java.net.SocketPermission"
+    },
+    {
+      "type": "java.net.URLPermission",
       "methods": [
         {
           "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.commons.compress.archivers.zip.UnicodeCommentExtraField",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.commons.compress.archivers.zip.UnicodePathExtraField",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.commons.compress.archivers.zip.X000A_NTFS",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.commons.compress.archivers.zip.X0014_X509Certificates",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.commons.compress.archivers.zip.X0015_CertificateIdForFile",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.commons.compress.archivers.zip.X0016_CertificateIdForCentralDirectory",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.commons.compress.archivers.zip.X0017_StrongEncryptionHeader",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.commons.compress.archivers.zip.X0019_EncryptionRecipientCertificateList",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.commons.compress.archivers.zip.X5455_ExtendedTimestamp",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.commons.compress.archivers.zip.X7875_NewUnix",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.xerces.impl.dv.dtd.DTDDVFactoryImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.xerces.jaxp.DocumentBuilderFactoryImpl"
-    },
-    {
-      "type": "org.apache.xerces.jaxp.SAXParserFactoryImpl"
-    },
-    {
-      "type": "org.apache.xerces.parsers.XIncludeAwareParserConfiguration",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
-    },
-    {
-      "type": "org.apache.xerces.stax.XMLEventFactoryImpl"
-    },
-    {
-      "type": "org.apache.xerces.util.SecurityManager",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        },
-        {
-          "name": "setEntityExpansionLimit",
           "parameterTypes": [
-            "int"
+            "java.lang.String",
+            "java.lang.String"
           ]
         }
       ]
     },
     {
-      "type": "org.apache.xmlbeans.impl.schema.BuiltinSchemaTypeSystem",
-      "methods": [
+      "type": "java.security.AllPermission"
+    },
+    {
+      "type": "java.security.SecurityPermission"
+    },
+    {
+      "type": "java.util.PropertyPermission"
+    },
+    {
+      "type": "java.util.concurrent.atomic.AtomicBoolean",
+      "fields": [
         {
-          "name": "get",
-          "parameterTypes": []
-        },
-        {
-          "name": "getNoType",
-          "parameterTypes": []
+          "name": "value"
         }
       ]
     },
     {
-      "type": "org.apache.xmlbeans.impl.schema.PathResourceLoader"
+      "type": "javax.smartcardio.CardPermission"
     },
     {
-      "type": "org.apache.xmlbeans.impl.schema.SchemaTypeLoaderImpl",
-      "methods": [
+      "type": "org.apache.logging.log4j.util.EnvironmentPropertySource"
+    },
+    {
+      "type": "org.apache.logging.log4j.util.SystemPropertiesPropertySource"
+    },
+    {
+      "type": "org.apache.xerces.util.SecurityManager"
+    },
+    {
+      "type": "org.apache.xmlbeans.metadata.system.sXMLCONFIG.TypeSystemHolder",
+      "fields": [
         {
-          "name": "build",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaTypeLoader[]",
-            "org.apache.xmlbeans.ResourceLoader",
-            "java.lang.ClassLoader"
-          ]
+          "name": "typeSystem"
         }
       ]
     },
     {
-      "type": "org.apache.xmlbeans.impl.schema.SchemaTypeSystemCompiler"
-    },
-    {
-      "type": "org.apache.xmlbeans.impl.schema.SchemaTypeSystemImpl",
-      "methods": [
+      "type": "org.apache.xmlbeans.metadata.system.sXMLLANG.TypeSystemHolder",
+      "fields": [
         {
-          "name": "<init>",
-          "parameterTypes": [
-            "java.lang.Class"
-          ]
+          "name": "typeSystem"
         }
       ]
     },
     {
-      "type": "org.apache.xmlbeans.impl.store.Locale"
-    },
-    {
-      "type": "org.apache.xmlbeans.impl.store.Path"
-    },
-    {
-      "type": "org.apache.xmlbeans.impl.store.Query"
-    },
-    {
-      "type": "org.openxmlformats.schemas.drawingml.x2006.main.impl.ThemeDocumentImpl",
-      "methods": [
+      "type": "org.apache.xmlbeans.metadata.system.sXMLSCHEMA.TypeSystemHolder",
+      "fields": [
         {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
+          "name": "typeSystem"
         }
       ]
     },
     {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTBorderImpl",
-      "methods": [
+      "type": "org.apache.xmlbeans.metadata.system.sXMLTOOLS.TypeSystemHolder",
+      "fields": [
         {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTBordersImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTCellStyleXfsImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTCellXfsImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTDxfsImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTFillImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTFillsImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTFontImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTFontsImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTRstImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
+          "name": "typeSystem"
         }
       ]
     },
     {
       "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTSstImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTStylesheetImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTTableStylesImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTXfImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.STCellStyleXfIdImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.STNumFmtIdImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.STXstringImpl",
       "methods": [
         {
           "name": "<init>",
@@ -439,23 +285,22 @@
       ]
     },
     {
-      "type": "org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.StyleSheetDocumentImpl",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": [
-            "org.apache.xmlbeans.SchemaType"
-          ]
-        }
-      ]
+      "type": "org.osgi.framework.FrameworkUtil"
     },
     {
-      "type": "schemaorg_apache_xmlbeans.system.sD023D6490046BA0250A839A9AD24C443.TypeSystemHolder",
-      "fields": [
-        {
-          "name": "typeSystem"
-        }
-      ]
+      "type": "schemaorg_apache_xmlbeans.system.sXMLCONFIG.TypeSystemHolder"
+    },
+    {
+      "type": "schemaorg_apache_xmlbeans.system.sXMLLANG.TypeSystemHolder"
+    },
+    {
+      "type": "schemaorg_apache_xmlbeans.system.sXMLSCHEMA.TypeSystemHolder"
+    },
+    {
+      "type": "schemaorg_apache_xmlbeans.system.sXMLTOOLS.TypeSystemHolder"
+    },
+    {
+      "type": "sun.reflect.Reflection"
     },
     {
       "type": "sun.security.provider.NativePRNG",
@@ -467,18 +312,15 @@
           ]
         }
       ]
-    },
-    {
-      "type": "sun.security.provider.SHA",
-      "methods": [
-        {
-          "name": "<init>",
-          "parameterTypes": []
-        }
-      ]
     }
   ],
   "resources": [
+    {
+      "glob": "META-INF/log4j-provider.properties"
+    },
+    {
+      "glob": "META-INF/services/ch.qos.logback.classic.spi.Configurator"
+    },
     {
       "glob": "META-INF/services/java.time.zone.ZoneRulesProvider"
     },
@@ -498,16 +340,52 @@
       "glob": "META-INF/services/javax.xml.stream.XMLInputFactory"
     },
     {
+      "glob": "META-INF/services/javax.xml.stream.XMLOutputFactory"
+    },
+    {
       "glob": "META-INF/services/javax.xml.xpath.XPathFactory"
     },
     {
-      "glob": "META-INF/services/org.apache.xerces.xni.parser.XMLParserConfiguration"
+      "glob": "META-INF/services/org.apache.logging.log4j.spi.Provider"
     },
     {
-      "glob": "META-INF/services/org.apache.xmlbeans.impl.store.PathDelegate.SelectPathInterface"
+      "glob": "META-INF/services/org.apache.logging.log4j.util.PropertySource"
     },
     {
-      "glob": "META-INF/services/org.apache.xmlbeans.impl.store.QueryDelegate.QueryInterface"
+      "glob": "META-INF/services/org.slf4j.spi.SLF4JServiceProvider"
+    },
+    {
+      "glob": "log4j2.StatusLogger.properties"
+    },
+    {
+      "glob": "log4j2.component.properties"
+    },
+    {
+      "glob": "log4j2.simplelog.properties"
+    },
+    {
+      "glob": "log4j2.system.properties"
+    },
+    {
+      "glob": "logback-test.scmo"
+    },
+    {
+      "glob": "logback-test.xml"
+    },
+    {
+      "glob": "logback.scmo"
+    },
+    {
+      "glob": "logback.xml"
+    },
+    {
+      "glob": "org/apache/poi/schemas/ooxml/system/ooxml/ctsst44f3type.xsb"
+    },
+    {
+      "glob": "org/apache/poi/schemas/ooxml/system/ooxml/index.xsb"
+    },
+    {
+      "glob": "org/apache/poi/schemas/ooxml/system/ooxml/sstf81fdoctype.xsb"
     },
     {
       "glob": "org/apache/xmlbeans/impl/regex/message.properties"
@@ -516,79 +394,16 @@
       "glob": "org/apache/xmlbeans/impl/regex/message_en.properties"
     },
     {
-      "glob": "org/slf4j/impl/StaticLoggerBinder.class"
+      "glob": "org/apache/xmlbeans/metadata/system/sXMLCONFIG/index.xsb"
     },
     {
-      "glob": "schemaorg_apache_xmlbeans/element/URI_SHA_1_640FACC0F3ED2458258952465E2A4DCFAE01C1D6/sst.xsb"
+      "glob": "org/apache/xmlbeans/metadata/system/sXMLLANG/index.xsb"
     },
     {
-      "glob": "schemaorg_apache_xmlbeans/element/URI_SHA_1_640FACC0F3ED2458258952465E2A4DCFAE01C1D6/styleSheet.xsb"
+      "glob": "org/apache/xmlbeans/metadata/system/sXMLSCHEMA/index.xsb"
     },
     {
-      "glob": "schemaorg_apache_xmlbeans/element/URI_SHA_1_B1DE9718F9D20DF6F07682D1D4E3EDC19321D557/theme.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/ctborderf935type.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/ctborders0d66type.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/ctcellstylexfsa81ftype.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/ctcellxfs1322type.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/ctdxfsb26atype.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/ctfill550ctype.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/ctfills2c6ftype.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/ctfont14d8type.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/ctfonts6623type.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/ctrsta472type.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/ctsst44f3type.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/ctstylesheet4257type.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/cttablestyles872ftype.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/ctxf97f7type.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/index.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/sstf81fdoctype.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/stcellstylexfid70c7type.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/stnumfmtid76fbtype.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/stxstring1198type.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/stylesheet5d8bdoctype.xsb"
-    },
-    {
-      "glob": "schemaorg_apache_xmlbeans/system/sD023D6490046BA0250A839A9AD24C443/themefd26doctype.xsb"
+      "glob": "org/apache/xmlbeans/metadata/system/sXMLTOOLS/index.xsb"
     },
     {
       "module": "java.xml",

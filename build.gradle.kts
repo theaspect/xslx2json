@@ -15,7 +15,9 @@ repositories {
 }
 
 dependencies {
-    implementation("com.monitorjbl:xlsx-streamer:2.1.0")
+    implementation("org.apache.poi:poi-ooxml:5.2.0")
+    implementation("com.github.pjfanning:excel-streaming-reader:5.0.3")
+    implementation("com.github.pjfanning:poi-shared-strings:2.9.1")
 
     implementation("com.fasterxml.jackson.core:jackson-core:2.18.3")
 
@@ -46,7 +48,9 @@ tasks.test {
 
 // https://graalvm.github.io/native-build-tools/latest/gradle-plugin.html#configure-native-image
 // Install visual studio https://www.graalvm.org/latest/getting-started/windows/
-// Run call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat" > nul
+// Run
+// call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat" > nul
+// gradlew nativeCompile
 // On linux run java -jar -agentlib:native-image-agent=config-output-dir=src/main/resources/META-INF/native-image build/libs/xlsx2json-1.0-SNAPSHOT-all.jar src/test/resources/input.xlsx out.json
 graalvmNative {
     // toolchainDetection.set(true)

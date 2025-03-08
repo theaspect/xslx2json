@@ -19,9 +19,6 @@ dependencies {
 
     implementation("com.fasterxml.jackson.core:jackson-core:2.18.3")
 
-    // Required for native image apache poi, the latest is 2.12.2
-    // implementation("xerces:xercesImpl:2.12.2")
-
     testImplementation("io.kotest:kotest-framework-api-jvm:5.9.0")
     testImplementation("io.kotest:kotest-runner-junit5:5.9.0")
 }

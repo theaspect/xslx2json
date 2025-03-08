@@ -8,7 +8,6 @@ import org.apache.poi.ss.usermodel.CellType.*
 import org.apache.poi.ss.usermodel.Workbook
 import java.io.InputStream
 import java.io.OutputStream
-import kotlin.collections.iterator
 
 
 object Parser {
@@ -19,6 +18,7 @@ object Parser {
             .open(inputStream) // InputStream or File for XLSX file (required)
 
         val sheet = workbook.getSheetAt(0)
+        System.err.println("Total ${sheet.lastRowNum} rows")
 
         val rowIterator = sheet.iterator()
 
@@ -32,6 +32,8 @@ object Parser {
             jsonGenerator.writeStartArray()
 
             for (row in rowIterator) {
+                if (row.rowNum % 1000 == 0) System.err.println("Parsed ${row.rowNum} rows")
+
                 jsonGenerator.writeStartObject()
 
                 for (cell in row) {

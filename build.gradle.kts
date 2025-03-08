@@ -19,6 +19,9 @@ dependencies {
 
     implementation("com.fasterxml.jackson.core:jackson-core:2.18.3")
 
+    api("org.slf4j:slf4j-api:2.0.7")
+    runtimeOnly("ch.qos.logback:logback-classic:1.4.14")
+
     testImplementation("io.kotest:kotest-framework-api-jvm:5.9.0")
     testImplementation("io.kotest:kotest-runner-junit5:5.9.0")
 }
